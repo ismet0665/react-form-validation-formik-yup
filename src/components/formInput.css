@@ -1,0 +1,26 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.form-input label {
+  font-weight: bold;
+}
+
+.form-input input {
+  line-height: 3rem;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
+  border: 1px solid gray;
+  outline: none;
+}
+
+span {
+  color: red;
+  font-size: 1rem;
+  font-weight: bolder;
+  /* display: none; */
+}
+.input-error {
+  border: 2px solid red !important;
+}

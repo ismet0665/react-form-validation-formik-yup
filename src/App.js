@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Formik1 from "./Formik1";
+import Formik2 from "./Formik2";
 
 function App() {
+  console.log("render");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Formik1 />} />
+          <Route path="/formik2" element={<Formik2 />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
